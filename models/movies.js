@@ -1,7 +1,7 @@
 import mongodb from "mongodb";
 import mongoose from "mongoose";
 
-const movieSchema = new mongoose.schema({
+const movieSchema = new mongoose.Schema({
     name: String,
     year: Number,
     genre: String,
