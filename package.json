@@ -3,7 +3,8 @@
     "express": "^5.1.0",
     "mongodb": "^6.19.0",
     "mongoose": "^8.18.0"
-  }, "description": "",
+  },
+  "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -14,4 +15,3 @@
   "license": "ISC",
   "type": "module"
 }
-

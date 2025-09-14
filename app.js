@@ -1,7 +1,7 @@
 import express from "express";
-import mongoose from "mongoose";
 import movieRoutes from "./routes/movieRoutes.js";
 import movie from "./models/movies.js";
+import mongoose from "./config/db-connection.js";
 
 const app = express();
 
@@ -9,7 +9,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use("/", movieRoutes); 
 
-mongoose.connect("mongodb://127.0.0.1:27017/apimovies")
+
+// mongoose.connect("mongodb://127.0.0.1:27017/apimovies")
 
 
 const port = 4000;
